@@ -2,6 +2,7 @@ const img1 = require('../../assets/img/food-table.jpg');
 const img2 = require('../../assets/img/grill.jpg');
 require('bootstrap');
 
+$(document).ready(function() {
 const carouselSlides = [
   {
     title: "We travel all over the US",
@@ -38,4 +39,5 @@ carouselSlides.forEach((slide, i) => {
       </div>
   </div>
 </div>`)
+})
 })

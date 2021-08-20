@@ -1,10 +1,10 @@
 // if (window.location.href.indexOf("tickets") > -1) {}
-require("bootstrap");
 const createEl = require("./domMethods");
+require("bootstrap");
 
-("tickets").ready( function() {
+(document).ready( function() {
     // DOM manipulation code specific to each page.
-    // if (window.location.href.indexOf("tickets") > -1) {
+    if (window.location.href.indexOf("tickets") > -1) {
 
         const purchaseBtn = document.getElementById("purchaseBtn");
         const purchaseEmail = document.getElementById("purchaseEmail");
@@ -26,6 +26,6 @@ const createEl = require("./domMethods");
           
         }
         purchaseBtn.addEventListener("click", purchaseTicket);
-    //   }
+      }
 });
 

@@ -1,11 +1,11 @@
 // if (window.location.href.indexOf("event") > -1) {}
-require("bootstrap");
 const createEl = require("./domMethods");
 const createLoremIpsum = require('./helpers');
+require("bootstrap");
 
-("events").ready( function() {
+(document).ready( function() {
     // DOM manipulation code specific to each page.
-    // if (window.location.href.indexOf("event") > -1) {
+    if (window.location.href.indexOf("event") > -1) {
         const currentEvent = JSON.parse(localStorage.getItem("currentEvent")) || {
             title: "Title Placeholder",
             subtitle: "",
@@ -27,5 +27,5 @@ const createLoremIpsum = require('./helpers');
           
         )
         pageEl.appendChild(containerEl)
-    //   }
+      }
 });

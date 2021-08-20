@@ -1,11 +1,11 @@
-// if (window.location.href.indexOf("schedule") > -1) {}
-require("bootstrap");
+
 const createEl = require("./domMethods");
 const { createLoremIpsum, dateConverter} = require('./helpers');
+require("bootstrap");
 
-$("schedule").ready( function() {
+$(document).ready( function() {
     // DOM manipulation code specific to each page.
-    // if (window.location.href.indexOf("schedule") > -1) {
+    if (window.location.href.indexOf("schedule") > -1) {
 
         const date = new Date();
         const d = date.getDate();
@@ -123,5 +123,5 @@ $("schedule").ready( function() {
         pageEl.appendChild(containerEl1);
         pageEl.appendChild(containerEl2);
         pageEl.appendChild(containerEl3);
-    //   }
+      }
 });
